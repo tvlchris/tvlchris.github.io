@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  font-family: "Rubik", sans-serif;
+}
+
+.header {
+  display: flex;
+  height: 73px;
+  background-color: #262626;
+  border-bottom: 1px solid #76717140;
+  align-items: flex-end;
+  padding: 0 60px;
+}
+.header-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20.84px;
+}
+.logo-section {
+  display: flex;
+  align-items: center;
+}
+.desktop-logo {
+  width: 150.78px;
+}
+.mobile-logo {
+  width: 29.98px;
+  display: none;
+}
+.nav-menu {
+  display: flex;
+  align-items: center;
+}
+.nav {
+  list-style: none;
+  display: flex;
+  gap: 80px;
+}
+.nav-item {
+  position: relative;
+}
+
+.nav-item:not(:last-child):after {
+  position: absolute;
+  content: "";
+  height: 19px;
+  top: 0;
+  right: -40px;
+  border-left: 1px solid #ffffffa6;
+  align-self: center;
+  transform: rotate(8deg);
+}
+.nav-item-link {
+  color: #ffffffa6;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 18.96px;
+  text-decoration: none;
+  transition: all 0.4s;
+}
+
+.nav-item-link:hover,
+.nav-item-link:active {
+  color: #fff;
+  text-decoration: none;
+}
+
+.main-body {
+  background-color: #262626;
+  display: flex;
+  padding: 73px 60px 110px 60px;
+  align-items: center;
+  height: 100vh;
+}
+.hero-image-container {
+  min-width: 477px;
+}
+.hero-image {
+  width: 100%;
+}
+.hero-text-container {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.heading-text-container {
+  margin-left: -134px;
+  margin-bottom: 63px;
+}
+.accent-text {
+  display: block;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1.2em;
+  margin-bottom: 30px;
+}
+.hero-heading {
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 1.3em;
+  letter-spacing: 0.04em;
+  width: 874px;
+}
+.desc {
+  font-size: 24px;
+  line-height: 1.13em;
+  font-weight: 300;
+  color: #a8a8a8;
+  max-width: 569px;
+  margin-left: 40px;
+  margin-right: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .desktop-logo {
+    display: none;
+  }
+
+  .mobile-logo {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .header {
+    height: 93px;
+    padding: 0 16px;
+  }
+  .header-container {
+    margin-bottom: 14.84px;
+  }
+
+  .nav {
+    list-style: none;
+    display: flex;
+    gap: 42px;
+  }
+
+  .nav-item:not(:last-child):after {
+    right: -21px;
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  .hero-text-container {
+    flex-grow: 1;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  .heading-text-container {
+    margin-bottom: 58px;
+  }
+  .accent-text {
+    font-size: 26px;
+    line-height: 1.1em;
+    margin-bottom: 26px;
+  }
+  .hero-heading {
+    font-size: 58px;
+    line-height: 1.2em;
+    width: 100%;
+  }
+  .desc {
+    font-size: 22px;
+    line-height: 1.3em;
+  }
+
+  /* .hero-image-container {
+    width: 477px;
+  } */
+}
+@media only screen and (max-width: 1147px) {
+  .main-body {
+    flex-direction: column;
+    padding: 43px 16.5px 110px 16.5px;
+    align-items: center;
+    gap: 30px;
+  }
+  .hero-image-container {
+    width: 865px;
+  }
+  .hero-text-container {
+    width: 865px;
+  }
+  .heading-text-container {
+    margin-left: 0;
+    margin-bottom: 63px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .hero-image-container {
+    width: 100%;
+  }
+  .hero-text-container {
+    width: 100%;
+  }
+  .desc {
+    width: 60%;
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .hero-image-container {
+    min-width: 100%;
+  }
+  .heading-text-container {
+    margin-bottom: 17px;
+  }
+  .accent-text {
+    font-size: 20px;
+    line-height: 1.1em;
+    margin-bottom: 18px;
+  }
+  .hero-heading {
+    font-size: 33px;
+    line-height: 1.2em;
+    width: 100%;
+  }
+  .desc {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .hero-image-container {
+    min-width: 100%;
+  }
+  .heading-text-container {
+    margin-bottom: 15px;
+  }
+  .accent-text {
+    font-size: 19px;
+    line-height: 1.1em;
+    margin-bottom: 16px;
+  }
+  .hero-heading {
+    font-size: 30px;
+    line-height: 1.2em;
+    width: 100%;
+  }
+  .desc {
+    font-size: 15px;
+  }
+}
